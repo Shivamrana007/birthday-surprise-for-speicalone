@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#100a14">
+  <meta name="description" content="A lovely surprise made to celebrate an extraordinary birthday.">
+  <title>A Birthday Dream — 1 of 7</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="entry-page">
+  <div class="stars" aria-hidden="true"></div>
+  <canvas class="sky" aria-hidden="true"></canvas>
+
+  <section class="loader" id="loader" aria-labelledby="loader-title">
+    <!-- Stage 1: Lovely Surprise Loading -->
+    <div class="loader-content loader-loading-stage" id="loaderStageLoading">
+      <div class="loader-pulse-ring" aria-hidden="true">
+        <span class="heart-pulse">💖</span>
+        <span class="orbit-particle p1">✦</span>
+        <span class="orbit-particle p2">✧</span>
+        <span class="orbit-particle p3">✨</span>
+      </div>
+      <p class="loader-eyebrow">A Special Birthday Celebration</p>
+      <h1 class="loader-title" id="loader-title">Lovely Surprise Loading<span class="dots">...</span></h1>
+      <p class="loader-status" id="loaderStatusText">Gathering stardust and sweet memories...</p>
+      
+      <div class="progress-container" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+      <div class="progress-percentage" id="progressPercentage">0%</div>
+
+      <button class="skip-loading-btn" id="skipLoadingBtn" type="button">Skip directly to surprise →</button>
+    </div>
+
+    <!-- Stage 2: Gatekeeper Surprise Card -->
+    <div class="loader-content loader-gatekeeper" id="loaderStageGate" hidden>
+      <div class="loader-orbit" aria-hidden="true">✦</div>
+      <p class="eyebrow">A Little Birthday Magic</p>
+      <h2 class="gate-title" id="gate-title">I have a surprise for you...<br>Are you ready?</h2>
+      <p class="loader-note">Take a breath, make a wish, and come float among the stars.</p>
+      <div class="yes-buttons">
+        <button class="yes-button" type="button">Yes! ✨</button>
+        <button class="yes-button" type="button">Yes! 💖</button>
+      </div>
+    </div>
+  </section>
+
+  <main class="story-page" inert>
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-inner">
+        <p class="page-counter">01 <span>/</span> 07</p>
+        <p class="eyebrow">Today, the universe celebrates you</p>
+        <h2 class="page-title" id="page-title">Happy Birthday!</h2>
+        <p class="hero-subtitle">A whole galaxy of wishes, just for you</p>
+        <div class="birthday-card">
+          <div class="portrait-wrap">
+            <img class="page-photo photo-1" src="images/photo-1.jpg" alt="A radiant birthday smile" onerror="this.onerror=null; this.src='images/user_media_1792345058086.jpg';">
+          </div>
+          <div class="message">
+            <p class="eyebrow">For someone extraordinary</p>
+            <p>To the most amazing person, happy birthday! You bring so much light and joy into the world just by being in it. Today is all about celebrating the beautiful soul you are. I hope you feel endlessly cherished today, because you truly deserve all the happiness in the universe.</p>
+          </div>
+        </div>
+        <nav class="page-nav" aria-label="Birthday pages">
+          <a class="page-link" href="page-2.html">Next little surprise <span aria-hidden="true">→</span></a>
+        </nav>
+      </div>
+    </section>
+    <footer>Made of moonlight, stardust &amp; love</footer>
+  </main>
+</body>
+</html>
